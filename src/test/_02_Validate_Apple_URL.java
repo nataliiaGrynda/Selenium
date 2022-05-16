@@ -2,6 +2,7 @@ package test;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import utilities.Driver;
 
 import java.util.concurrent.TimeUnit;
 
@@ -16,8 +17,8 @@ TEST CASE
 NOTE:
 driver.getCurrentUrl(); // this line returns the URL of the current page as a String
  */
-
-
+   WebDriver driver = Driver.getDriver();
+/*
     System.setProperty("webdriver.chrome.driver",
       "C:\\Users\\roman\\IdeaProjects\\selenium_intro\\chromedriver_win32 (1)\\chromedriver.exe");
     WebDriver driver = new ChromeDriver();
@@ -25,7 +26,7 @@ driver.getCurrentUrl(); // this line returns the URL of the current page as a St
     driver.manage().window().maximize();
 
     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-
+*/
     driver.get("https://www.apple.com/");
 
    String actualURL = driver.getCurrentUrl();
