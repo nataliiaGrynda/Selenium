@@ -17,15 +17,11 @@ public class _03_Selenium_Navigate {
     Validate the URL of the page
     Validate the title of the page
 
-
     EXPECTED RESULT:
     URL  = https://www.amazon.com/
     Title = Amazon.com. Spend less. Smile more.
 
      */
-
-
-      WebDriver driver = Driver.getDriver();
       /*
       //1. Set up driver
       System.setProperty("webdriver.chrome.driver",
@@ -34,7 +30,7 @@ public class _03_Selenium_Navigate {
       driver.manage().window().maximize();
       driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 */
-
+      WebDriver driver = Driver.getDriver();
       //2. Validation
       driver.get("https://www.techglobalschool.com");
       driver.navigate().refresh();
