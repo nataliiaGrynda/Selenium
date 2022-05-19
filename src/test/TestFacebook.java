@@ -6,8 +6,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import utilities.Driver;
 
-import java.util.concurrent.TimeUnit;
-
 public class TestFacebook {
   public static void main(String[] args) {
 
@@ -38,6 +36,16 @@ displayed
     WebElement loginButton = driver.findElement(By.name("login"));
     WebElement forgotPasswordLink = driver.findElement(By.linkText("Forgot password?"));
     WebElement createNewAccountButton = driver.findElement(By.cssSelector("button"));
+   /*
+   8. WebElement loginButton = driver.findElement(By.name("login"));
+            validateElementIsDisplayedAndEnabled(loginButton, "Login button");
+
+
+//  10.  WebElement createNewAccountButton = driver.findElement(By.xpath("//a[@data-testid='open-registration-form-button']"));
+      WebElement createNewAccountButton = driver.findElement(By.cssSelector("a[data-testid='open-registration-form-button']"));
+      validateElementIsDisplayed(createNewAccountButton, "Create New Account button");
+
+    */
 
     if(logInSignUpTitle.equals("Facebook - Log In or Sign Up")) System.out.println("logInSignUpTitle validation PASSED");
     else System.out.println("logInSignUpTitle validation is Failed");
